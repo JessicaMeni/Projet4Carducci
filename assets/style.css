@@ -40,6 +40,10 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
+}
+.carousel-item .w-100{
+	aspect-ratio: 16/7;
 }
 
 #about {
@@ -69,6 +73,7 @@ body {
 
 .picture img {
 	width: 100%;
+	aspect-ratio: 1/1; /* pour l'image de Nina et de l'appareil photo, préchargement d'un espace */
 
 }
 #about-me {
