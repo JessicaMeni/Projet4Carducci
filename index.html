@@ -4,29 +4,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Photographe professionnelle - Nina Carducci</title>
 	<meta name="description" content="Site professionnel pour de la proposition de service autour de la photo comme: shooting photo de mariage, portrait, en entreprise ou autre, des retouches de photo d'un niveau professionnel ou la création d'un album photo personnalisé.">
-	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <!-- rajout de preload, n'a pas éliminer les ressources qui bloquent le rendu mais "Réduisez les ressources JavaScript inutilisées" reussi apparemment? -->
-	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript> <!-- ça sert a quelque chose le noscript? -->
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript> <!-- ça sert a quelque chose le noscript? oui car la ligne au dessus utilise js style -->
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js" ></script> <!-- ajout du async puis suppression, causait des délais important -->
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" ></script> <!-- ajout du async puis suppression, causait des délais important -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script> <!-- ces trois dernier en defer -->
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 	<!-- RS -->
 	<meta property="og:site_name" content="Nina Carducci" />
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="..." /> <!-- a ajouter -->
+	<meta property="og:url" content="https://jessicameni.github.io/Projet4Carducci/" /> <!-- a ajouter -->
 	<meta property="og:title" content="Photographe professionnelle Nina Carducci" />
 	<meta property="og:description" content="services de : shooting photo, retouche ou création d'album photo" />
 	<meta property="og:image" content="https://images.unsplash.com/photo-1548783300-70b41bc84f56?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="Nina Carducci" />
+	<meta name="twitter:site" content="@monCompteTwitter" />
+	<meta name="twitter:title" content="Photographe professionnelle Nina Carducci" />
+	<meta name="twitter:description" content="Services de : shooting photo, retouche ou création d'album photo" />
+	<meta name="twitter:image" content="https://images.unsplash.com/photo-1548783300-70b41bc84f56?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+	<meta name="twitter:url" content="https://jessicameni.github.io/Projet4Carducci/" />
 </head>
 <body>
 
 <div class="top-header">
-	<h1 class="name">Nina Carducci - Photographe professionnelle</h1>
+	<h1 class="name">Nina Carducci - Photographe professionnelle à Bordeaux</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -85,8 +92,8 @@
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" alt="foule lors d'un concert" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-440px.webp 440w, ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp 2x" /> <!-- ajout du srcset avec images reduit a 440px , ajouter cette version 2x ne fait fonctionner ni elle ni 440w-->
-			<img data-gallery-tag="Entreprises" class="gallery-item" alt="homme en costume" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-440px.webp 424w" /> <!-- double srcset fonctionnel? ça ne fonctionnait pas pour le 440px, Comment calculer le gain de poid ? -->
-			<img data-gallery-tag="Entreprises" class="gallery-item" alt="femme souriant lors d'une reunion" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-440px.webp 650w, ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp 4084w" /x>
+			<img data-gallery-tag="Entreprises" class="gallery-item" alt="homme en costume" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-440px.webp 424w, ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp 1000w" /> <!-- double srcset fonctionnel? ça ne fonctionnait pas pour le 440px, Comment calculer le gain de poid ? -->
+			<img data-gallery-tag="Entreprises" class="gallery-item" alt="femme souriant lors d'une reunion" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-440px.webp 650w, ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp 4084w"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" alt="les mains des mariés réunis" loading="lazy" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-440px.webp 550w, ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp 2x"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'un homme qui plisse des yeux" loading="lazy" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-440px.webp 440w, ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp 2x"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" alt="mariés qui rient" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-440px.webp 440w, ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp 2x"/>
